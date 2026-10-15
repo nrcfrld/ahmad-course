@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c2c3ff;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 2px 2px 20px rgba(0,0,0, 0.2);
+}
+
+.card h1, .card p {
+    text-align: center
+}
+
+.card p {
+    margin-top: 8px;
+}
+
+.card ul li {
+    list-style-type: none;
+    background-color: #c2c3ff;
+    color: #1e20b1;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
+
+.card ul {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
