@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #c9c9c9;
+        }
+
+        .card {
+            background-color: white;
+            padding: 12px;
+            margin: 24px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15)
+        }
+
+        .card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15)
+        }
+
+        .card .card-header {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .card .card-header h1 {
+            font-size: 20px;
+        }
+
+        .card .card-header p {
+            font-size: 14px;
+            color: #4e4e4e;
+        }
+
+        .card .card-content {
+            color: #4e4e4e;
+            margin-bottom: 16px;
+        }
+
+        .card .card-stats {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .card .card-stat {
+            display: flex;
+            flex-direction: column;
+            background-color: #eeeeee;
+            flex: 1;
+            border-radius: 4px;
+            align-items: center;
+            padding: 8px;
+        }
+
+         .card .card-stat b {
+            font-size: 18px;
+         }
+
+        .card .card-stat span {
+            font-size: 12px;
+            color: #4e4e4e;
+         }
+
+         .card .card-action {
+            display: flex;
+            gap: 12px;
+         }
+
+         .card .card-action button {
+            flex: 1;
+         }
+
+         .card .card-action .btn-primary {
+            background-color: #0e0e0e;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            border-radius: 6px;
+            border: none;
+         }
+
+         .card .card-action .btn-secondary {
+            background-color: #555555;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            border-radius: 6px;
+            border: none;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Pemandangan_Gunung_Bromo.jpg?utm_source=min.wikipedia.org&utm_campaign=index&utm_content=original">
+            <div>
+                <h1>Sam Rivers</h1>
+                <p>Photographer</p>
+            </div>
+        </div>
+
+        <p class="card-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam laudantium, libero cum magnam fugiat dicta deserunt rem ducimus consequuntur earum.</p>
+
+        <div class="card-stats">
+            <div class="card-stat">
+                <span>Countries Visited</span>
+                <b>5</b>
+            </div>
+
+            <div class="card-stat">
+                <span>Exhibitions Held</span>
+                <b>10</b>
+            </div>
+
+            <div class="card-stat">
+                <span>Rating</span>
+                <b>4.9</b>
+            </div>
+        </div>
+
+
+        <div class="card-action">
+            <button class="btn-primary" type="button">Explore Portfolio</button>
+            <button class="btn-secondary" type="button">Message</button>
+        </div>
+    </div>
+</body>
+</html>

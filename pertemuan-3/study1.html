@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flexbox</title>
+    <style>
+        header {
+            background-color: #ffb5b5;
+            text-align: center;
+            padding: 20px;
+        }
+
+        aside {
+            background-color: #b5d0ff;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+
+        main {
+            background-color: #b5ffb5;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        footer {
+            background-color: #ffb5e1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+
+        section {
+            background-color: #fff5b5;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Semantic = Sesuatu itu punya meaning atau arti -->
+
+   <header>Header + Menu</header>
+   
+   <div class="container">
+    <aside>Sidebar</aside>
+    <main>
+     Konten utama
+     <div class="container">
+        <section>Section</section>
+        <section>Section</section>
+     </div>
+    </main>
+   </div>
+   
+
+   <footer>Footer</footer>
+</body>
+</html>
