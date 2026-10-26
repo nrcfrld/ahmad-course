@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript DOM</title>
+
+    <style>
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Tugas</h1>
+
+    <form>
+        <input type="text" placeholder="Nama Tugas" />
+        <select>
+            <option value="1">Penting</option>
+            <option value="2">Tidak Penting</option>
+        </select>
+
+        <button type="submit">Tambah Tugas </button>
+    </form>
+
+
+    <ol>
+            <li>Tugas 1</li>
+            <li class="text-red">Tugas 2</li>
+            <li>Tugas 3</li>
+    </ol>
+
+
+    <!-- 
+    1. Setiap user input nama tugas dan memilih prioritas, lalu klik submit, maka tugas akan ditambahkan ke dalam list.
+    2. Jika prioritas tugas adalah penting, maka nama tugas akan berwarna merah.
+    3. Jika user sudah submit atau klik tambah maka form direset
+    4. User harus isi dulu nama tugas sebelum submit, jika tidak maka akan muncul alert "Nama tugas harus diisi"
+    -->
+</body>
+</html>
