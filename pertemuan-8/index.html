@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript DOM</title>
+
+    <style>
+        .high {
+            color: red;
+        }
+
+        .error{
+            color: red;
+            font-size: 12px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo List Management</h1>
+
+    <form id="todo-form">
+        <div class="form-group title">
+            <label for="todo-input">Title</label>
+            <input name="title" type="text" id="todo-input" placeholder="Enter a new todo">
+            <div class="message-container"></div>
+        </div>
+
+        <div class="form-group priority">
+            <label for="priority-select">Priority</label>
+            <select name="priority" id="priority-select">
+                <option value="">--Pilih Priority--</option>
+                <option value="high">High</option>
+                <option value="low">Low</option>
+            </select>
+             <div class="message-container"></div>
+        </div>
+
+        <button type="submit">Add Todo</button>
+    </form>
+
+
+    <ol id="todo-list">
+        <!-- Todo items will be added here -->
+    </ol>
+
+    <script src="script.js"></script>
+</body>
+</html>

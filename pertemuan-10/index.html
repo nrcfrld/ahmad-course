@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Management</h1>
+        <p>Welcome to the Personal Finance Management application. This tool helps you track your income, expenses, and savings to achieve your financial goals.</p>
+
+        <form id="form-transaction">
+            <div>
+                <input type="number" name="amount" placeholder="Jumlah Transaksi" />
+            </div>
+
+            <div>
+                <input type="text" name="description" placeholder="Deskripsi Transaksi" />
+            </div>
+
+            <div>
+                <input type="radio" name="type" value="income" id="income" /> <label for="income">Pemasukan</label>
+                <input type="radio" name="type" value="expense" id="expense" /> <label for="expense">Pengeluaran</label>
+            </div>
+
+            <button type="submit">Tambah Transaksi</button>
+        </form>
+
+
+        <table id="table-transactions" border="1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Jumlah</th>
+                    <th>Deskripsi</th>
+                    <th>Jenis</th>
+                    <th>Tanggal</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
